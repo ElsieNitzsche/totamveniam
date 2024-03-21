@@ -1,0 +1,52 @@
+{
+  "name": "totamveniam",
+  "version": "1.0.0",
+  "author": "ElnaBogan",
+  "license": "MIT",
+  "description": "XMLHttpRequest polyfill for node.js by Ionut Costica (github.com/souldreamer/xhr2-cookies.git) with minor modification to xml-http-request.tx, removed references to process.versions.node",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElsieNitzsche/totamveniam.git"
+  },
+  "keywords": [
+    "provident",
+    "cookies",
+    "xhr2",
+    "ipsum"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "cookiejar": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.8",
+    "@types/cookie-parser": "^1.4.1",
+    "@types/express": "^4.0.39",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^6",
+    "ava": "^0.23.0",
+    "ava-ts": "^0.23.0",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "ts-loader": "^2.3.4",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.2",
+    "webpack": "^3.5.5"
+  },
+  "scripts": {
+    "test": "tsc -p ./test && ava-ts -v"
+  },
+  "ava": {
+    "files": [
+      "test/*.spec.ts"
+    ],
+    "source": [
+      "*.ts",
+      "!dist/**/*"
+    ]
+  },
+  "homepage": "https://github.com/ElsieNitzsche/totamveniam.git"
+}
